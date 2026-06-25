@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, ArrowRight } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Github, Linkedin } from "@/components/icons";
 
 export default function Contact() {
@@ -22,11 +22,11 @@ export default function Contact() {
 
           <div className="relative z-10 flex flex-col items-center">
             <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-6">
-              Let's Build Something <br className="hidden md:block" />
+              Let&apos;s Build Something <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Amazing Together.</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-              Whether you have a project in mind or just want to say hi, I'm always open to discussing new opportunities and collaborations.
+              Whether you have a project in mind or just want to say hi, I&apos;m always open to discussing new opportunities and collaborations.
             </p>
 
             <div className="flex items-center justify-center gap-4 w-full">

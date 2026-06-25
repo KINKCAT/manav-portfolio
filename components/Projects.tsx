@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 import { Github } from "@/components/icons";
 import Image from "next/image";
 
-const projectsData: any[] = [
+const projectsData: { title: string; description: string; imageUrl: string; tags: string[]; github: string; live: string }[] = [
   // Add your projects here
 ];
 

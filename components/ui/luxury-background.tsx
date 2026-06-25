@@ -1,23 +1,19 @@
 "use client";
 
-import { useRef, useMemo } from "react";
+import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
+const particlesCount = 800;
+const positions = new Float32Array(particlesCount * 3);
+for (let i = 0; i < particlesCount; i++) {
+  positions[i * 3] = (Math.random() - 0.5) * 20; // x
+  positions[i * 3 + 1] = (Math.random() - 0.5) * 20; // y
+  positions[i * 3 + 2] = (Math.random() - 0.5) * 10; // z
+}
+
 function Particles() {
   const pointsRef = useRef<THREE.Points>(null);
-
-  // Generate random points for stars
-  const particlesCount = 800;
-  const positions = useMemo(() => {
-    const positions = new Float32Array(particlesCount * 3);
-    for (let i = 0; i < particlesCount; i++) {
-      positions[i * 3] = (Math.random() - 0.5) * 20; // x
-      positions[i * 3 + 1] = (Math.random() - 0.5) * 20; // y
-      positions[i * 3 + 2] = (Math.random() - 0.5) * 10; // z
-    }
-    return positions;
-  }, []);
 
   useFrame((state, delta) => {
     if (pointsRef.current) {

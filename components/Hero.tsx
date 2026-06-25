@@ -16,7 +16,7 @@ export default function Hero() {
           transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-6xl md:text-[90px] lg:text-[110px] font-bold leading-[1.1] tracking-tight text-white mb-8"
         >
-          Hi, I'm Manav.
+          Hi, I&apos;m Manav.
           <br />
           Build the Future.
         </motion.h1>
